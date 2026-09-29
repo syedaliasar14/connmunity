@@ -11,7 +11,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Project Instructions
 
-- Use Tailwind CSS
+- Use Tailwind CSS for styling
 - When needed break up pages or large/heavy components into readable and modular components and place them inside a "components" folder in the subdirectory
 - Name new component files in kebab-case
 
