@@ -1,3 +1,4 @@
+import AboutSection from "./components/about-section";
 import FeaturedCreatives from "./components/featured-creatives";
 import HomeHero from "./components/home-hero";
 import JoinCallout from "./components/join-callout";
@@ -9,6 +10,7 @@ export default function Home() {
       <TickerBar />
       <HomeHero />
       <FeaturedCreatives />
+      <AboutSection />
       <JoinCallout />
     </>
   );

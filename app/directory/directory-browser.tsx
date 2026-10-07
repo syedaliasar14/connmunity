@@ -26,8 +26,11 @@ export default function DirectoryBrowser({ initialQuery, initialCategory, initia
   return (
     <>
       <DirectoryFilters query={query} onQueryChange={setQuery} category={category} onCategoryChange={setCategory} location={location} onLocationChange={setLocation} />
-      <div className="my-[15px] flex justify-between gap-3 font-mono text-[10px] text-subtle"><span>{filtered.length} {filtered.length === 1 ? "creative" : "creatives"} found</span><span>ALL OVER CONNECTICUT ↘</span></div>
-      <CreativeGrid creatives={filtered} badgeFor={(creative) => creative.category} className="mb-[60px]" />
+      <div className="my-3.75 flex justify-between gap-3 font-mono text-[10px] text-subtle">
+        <span>{filtered.length} {filtered.length === 1 ? "creative" : "creatives"} found</span>
+        <span>ALL OVER CONNECTICUT ↘</span>
+      </div>
+      <CreativeGrid creatives={filtered} badgeFor={(creative) => creative.category} className="mb-15" />
     </>
   );
 }

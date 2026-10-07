@@ -25,11 +25,15 @@ export default async function ProfilePage({ params }: ProfilePageProps) {
 
   return (
     <>
-      <div className="flex items-center justify-between gap-4 border-b border-ink py-6 pb-[19px]">
-        <Link className="inline-flex min-h-[46px] items-center justify-center gap-[10px] border border-ink px-[17px] font-mono text-[11px] font-bold no-underline transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-surface hover:shadow-[3px_3px_0_#171714]" href="/directory"><ArrowLeft size={14} /> Back to the directory</Link>
-        <span className="font-mono text-[10px] font-semibold uppercase">A CONN.MUNITY PROFILE / 00{creatives.indexOf(creative) + 1}</span>
+      <div className="flex items-center justify-between gap-4 border-b border-ink py-6 pb-4.75">
+        <Link className="inline-flex min-h-11.5 items-center justify-center gap-2.5 border border-ink px-4.25 font-mono text-[11px] font-bold no-underline transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-surface hover:shadow-[3px_3px_0_#171714]" href="/directory">
+          <ArrowLeft size={14} /> Back to the directory
+        </Link>
+        <span className="font-mono text-[10px] font-semibold uppercase">
+          A CONN.MUNITY PROFILE / 00{creatives.indexOf(creative) + 1}
+        </span>
       </div>
-      <section className="grid grid-cols-[minmax(0,1.02fr)_minmax(330px,.98fr)] gap-12 py-[38px] pb-[60px] max-[760px]:grid-cols-1 max-[760px]:gap-[26px]">
+      <section className="grid grid-cols-[minmax(0,1.02fr)_minmax(330px,.98fr)] gap-12 py-9.5 pb-15 max-tablet:grid-cols-1 max-tablet:gap-6.5">
         <ProfileGallery creative={creative} />
         <ProfileDetails creative={creative} />
       </section>

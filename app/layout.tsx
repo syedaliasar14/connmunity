@@ -29,11 +29,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
       <body>
-        <div className="mx-auto flex min-h-screen w-[calc(100%_-_3rem)] max-w-[1180px] flex-col max-[480px]:w-[calc(100%_-_1.5rem)]">
+        <div className="mx-auto flex min-h-screen w-[calc(100%_-_3rem)] max-w-[1180px] flex-col max-mobile:w-[calc(100%_-_1.5rem)]">
           <SiteHeader />
           <main className="min-h-[calc(100vh-154px)] flex-1">{children}</main>
-          <footer className="mt-[72px] border-t border-ink">
-            <div className="flex min-h-[72px] items-center justify-between gap-[18px] font-mono text-[10px] leading-[1.5] text-subtle max-[480px]:flex-col max-[480px]:items-start max-[480px]:justify-center max-[480px]:py-4">
+          <footer className="mt-18 border-t border-ink">
+            <div className="flex min-h-18 items-center justify-between gap-4.5 font-mono text-[10px] leading-[1.5] text-subtle max-mobile:flex-col max-mobile:items-start max-mobile:justify-center max-mobile:py-4">
               <span>CONN.MUNITY // MADE OF PEOPLE, NOT ALGORITHMS</span>
               <a className="text-ink" href="mailto:hello@conn.munity">SAY HELLO ↗</a>
               <span>CONNECTICUT, USA · 2026</span>
