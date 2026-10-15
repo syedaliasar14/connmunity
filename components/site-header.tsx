@@ -12,7 +12,7 @@ export default function SiteHeader() {
       <nav className="flex items-center gap-6.75 font-mono text-xs font-semibold leading-none max-tablet:gap-3.5 max-tablet:text-[10px] max-mobile:gap-2.5 max-mobile:text-[9px]" aria-label="Main navigation">
         <Link className="rounded-full border border-ink px-3.75 py-3 transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[3px_3px_0_#171714] max-tablet:px-2.75 max-tablet:py-2.5 max-mobile:p-2.25" href="/directory">Directory</Link>
         <Link className="rounded-full border border-ink bg-ink px-3.75 py-3 text-white transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-acid hover:text-ink hover:shadow-[3px_3px_0_#171714] max-tablet:px-2.75 max-tablet:py-2.5 max-mobile:p-2.25" href="/join">
-          + Join in
+          + Join
         </Link>
       </nav>
     </header>

@@ -8,7 +8,7 @@ export default async function DirectoryPage({ searchParams }: DirectoryPageProps
   const filters = await searchParams;
   return (
     <>
-      <section className="border-b border-ink pb-7.5 pt-12.25">
+      <section className="border- border-ink pb-7.5 pt-12.25">
         {/* <span className="inline-flex items-center gap-2 font-mono text-[10px] font-semibold uppercase leading-[1.3]">
           <span className="inline-block size-2 rounded-full bg-poppy" />
           The people index / 001—∞
