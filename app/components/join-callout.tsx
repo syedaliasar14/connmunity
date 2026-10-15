@@ -5,10 +5,12 @@ export default function JoinCallout() {
   return (
     <section className="mt-14 flex items-center justify-between gap-6 border-y border-ink py-6.5 max-mobile:items-start max-mobile:flex-col">
       <h2 className="m-0 max-w-[520px] text-[clamp(24px,4vw,38px)] font-bold leading-[1.1] tracking-[-1.5px]">
-        Making something around here? You belong in this picture.
+        <span className="relative after:rounded-full z-0 after:absolute after:top-0 after:-left-0.75 after:-right-10 after:-z-10 after:h-10 after:md:h-20 after:-rotate-[1.7deg] after:bg-acid after:content-['']">
+          Creating something amazing around CT?
+        </span>
       </h2>
-      <Link className="inline-flex min-h-11.5 shrink-0 items-center justify-center gap-2.5 border border-ink bg-ink px-4.25 font-mono text-[11px] font-bold text-white no-underline transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-acid hover:text-ink hover:shadow-[3px_3px_0_#171714]" href="/join">
-        Make a little profile <ArrowRight size={15} />
+      <Link className="inline-flex rounded-full py-4 shrink-0 items-center justify-center gap-2.5 border border-ink bg-ink px-4.25 font-mono text-[11px] font-bold text-white no-underline transition hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-acid hover:text-ink hover:shadow-[3px_3px_0_#171714]" href="/join">
+        + Join your Conn.munity
       </Link>
     </section>
   );

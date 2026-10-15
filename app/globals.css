@@ -71,7 +71,7 @@
   --line: #c9c8bf;
   --poppy: #ed4a34;
   --signal: #4059e8;
-  --acid: #d6f36a;
+  --acid: #ffde59;
   --card: #fffefa;
   --card-foreground: #171714;
   --popover: #fffefa;
@@ -93,7 +93,7 @@
   --chart-3: #d6f36a;
   --chart-4: #77766e;
   --chart-5: #171714;
-  --radius: 0;
+  --radius: 0.625rem;
   --sidebar: #fffefa;
   --sidebar-foreground: #171714;
   --sidebar-primary: #171714;
@@ -109,6 +109,8 @@
     transform: translateX(-50%);
   }
 }
+
+@custom-variant hover (&:hover);
 
 @layer base {
   * {

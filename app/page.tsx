@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <TickerBar />
       <HomeHero />
-      <FeaturedCreatives />
+      {/* <FeaturedCreatives /> */}
       <AboutSection />
       <JoinCallout />
     </>
