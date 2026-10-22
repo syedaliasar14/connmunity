@@ -8,11 +8,14 @@ export default async function DirectoryPage({ searchParams }: DirectoryPageProps
   const filters = await searchParams;
   return (
     <>
+      <main className="flex flex-col items-center justify-center gap-4 p-8 text-center">
+        <span className="text-6xl font-bold">Coming Soon</span>
+        <p className="max-w-md text-neutral-500">
+          We&apos;re in the early stages of building Connmunity, and the directory is on the way. Join the waitlist to be among the first to know when it launches.
+        </p>
+      </main>
+      {/* 
       <section className="border- border-ink pb-7.5 pt-12.25">
-        {/* <span className="inline-flex items-center gap-2 font-mono text-[10px] font-semibold uppercase leading-[1.3]">
-          <span className="inline-block size-2 rounded-full bg-poppy" />
-          The people index / 001—∞
-        </span> */}
         <h1 className="mb-2.5 mt-3.5 text-[clamp(44px,7vw,74px)] font-bold leading-[.96] tracking-[-4px]">
           Find your people.
         </h1>
@@ -23,7 +26,7 @@ export default async function DirectoryPage({ searchParams }: DirectoryPageProps
       <DirectoryBrowser initialQuery={filters.q ?? ""}
         initialCategory={filters.category ?? "All work"}
         initialLocation={filters.location ?? "Everywhere"}
-      />
+      /> */}
     </>
   );
 }

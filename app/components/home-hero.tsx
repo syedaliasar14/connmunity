@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Search } from "lucide-react";
-import { creatives } from "@/lib/creatives";
 
 export default function HomeHero() {
   return (
@@ -39,24 +38,24 @@ export default function HomeHero() {
           </Link>
         </div>
       </div>
-      
+
       <div className="relative min-h-[380px] max-tablet:mx-auto max-tablet:min-h-[350px] max-tablet:w-full max-tablet:max-w-[460px] max-mobile:min-h-[310px]" aria-label="A peek at Connecticut's creative community">
         {/* <span className="absolute left-[47%] top-5.75 font-mono text-[35px] font-bold leading-none text-signal" aria-hidden="true">✳</span> */}
-        <div className="absolute left-0 top-[8%] z-30 aspect-square w-[45%] overflow-hidden rounded-[8px] border border-ink bg-[#deddd4] grayscale">
+        <div className="absolute left-0 top-[8%] z-30 aspect-square w-[45%] overflow-hidden rounded-[8px] border border-ink/50 bg-[#deddd4]">
           <Image className="size-full object-cover"
-            src={creatives[0].photo} alt="Illustrator Mara James"
+            src="/homepage-pics/jordan.jpg" alt="Jordan Alexandre"
             width={600} height={760} unoptimized priority
           />
         </div>
-        <div className="absolute left-[35%] top-[21%] z-20 aspect-square w-[45%] overflow-hidden rounded-[8px] border border-ink bg-[#deddd4] grayscale">
+        <div className="absolute left-[35%] top-[21%] z-20 aspect-square w-[45%] overflow-hidden rounded-[8px] border border-ink/50 bg-[#deddd4]">
           <Image className="size-full object-cover"
-            src={creatives[1].photo} alt="Photographer Eli Rivera"
+            src="/homepage-pics/Sahar and Kim.jpg" alt="Sahar and Kim"
             width={600} height={760} unoptimized priority
           />
         </div>
-        <div className="absolute left-[70%] top-[8%] z-10 aspect-square w-[45%] overflow-hidden rounded-[8px] border border-ink bg-[#deddd4] grayscale">
+        <div className="absolute left-[70%] top-[8%] z-10 aspect-square w-[45%] overflow-hidden rounded-[8px] border border-ink/50 bg-[#deddd4]">
           <Image className="size-full object-cover"
-            src={creatives[2].photo} alt="Graphic designer Nina Park"
+            src="/homepage-pics/julian.jpg" alt="Julian Alexandre"
             width={600} height={760} unoptimized priority
           />
         </div>
